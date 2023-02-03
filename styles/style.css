@@ -232,3 +232,114 @@ img {
   display: block;
   height: auto;
 }
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+figure {
+  margin: 0;
+}
+
+header {
+  background-image: url(/assets/header-image.jpg);
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+header div.header {
+  padding-top: 40px;
+}
+header div.header span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+header h1 {
+  color: #4c0341;
+  font-family: "Pompiere", cursive;
+  font-size: 5.5rem;
+  line-height: 3.2rem;
+  -webkit-transform: translate(-100px, 150px);
+          transform: translate(-100px, 150px);
+}
+
+div.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+div.flex-container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 35%;
+  -webkit-transform: translate(120px, 30px);
+          transform: translate(120px, 30px);
+}
+div.flex-container span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+div.flex-container a {
+  padding-top: 30px;
+  color: #0d0d0d;
+  font-family: "Pompiere", cursive;
+  letter-spacing: 1.1px;
+  line-height: 1.5rem;
+  font-size: 1.79rem;
+  -webkit-transform: translate(-100px, 30px);
+          transform: translate(-100px, 30px);
+}
+
+nav.menu li a {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 29px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,210 @@
+//WHAT IS UNDER THE SEA SECTION//
+.about {
+    background-color:$main-color;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2{
+        color:$font-button-color ;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family:$heading-font ;
+        font-size: $main-heading-font;
+    }
+
+    p{
+        font-size: $nav-button-footer-font-size;
+        font-family: $other-font;
+        line-height: 1.45rem;
+        margin-bottom: 40px;
+    }
+
+    a{
+        font-size: 1rem;
+        background-color:$font-button-color;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        color:$secondary-color ;
+    }
+    }
+//WHAT IS UNDER THE SEA SECTION END//
+//**************************************//
+//ADDITIONS AND OPTIONS SECTION//
+.additions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    figure{
+        flex-basis: 40%;
+    }
+
+    article{
+        flex-basis:40%;
+        padding-right: 200px;
+
+        h3{
+            font-size: 2.1rem;
+            font-family: $heading-font;
+            letter-spacing:1.3px ;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        p{
+            font-size: 1rem;
+            font-family: $other-font;
+            padding-bottom: 40px;
+            line-height: 1.45rem;
+        }
+
+        a{
+            font-size: 1rem;
+            font-family: $other-font;
+            text-transform: uppercase;
+            background-color: $footer-links-color;
+            color: $secondary-color;
+            padding: 10px 20px;
+        }
+    }
+
+
+
+    img{
+        box-shadow: 40px 40px 0px 1px rgba(254,111,25,1);
+        transform:translateY(-40px);
+    }
+}
+
+.options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    figure{
+        flex-basis: 40%;
+    }
+
+    article{
+        flex-basis:40%;
+        text-align: end;
+        padding-left: 200px;
+
+        h3{
+            font-size: 2.1rem;
+            font-family: $heading-font;
+            letter-spacing:1.3px ;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+
+        p{
+            font-size: 1rem;
+            font-family: $other-font;
+            padding-bottom: 40px;
+            line-height: 1.45rem;
+        }
+
+        a{
+            font-size: 1rem;
+            font-family: $other-font;
+            text-transform: uppercase;
+            background-color: $footer-links-color;
+            color: $secondary-color;
+            padding: 10px 20px;
+        }
+    }
+
+
+
+    img{
+        box-shadow: -40px 40px 0px 1px rgba(254,111,25,1);
+        transform:translateY(40px);;
+        position: relative;
+        z-index: 1;
+    }
+}
+//  NEW ADDITIONS AND OPTIONS SECTION END//
+//********************************************//
+//********************************************//
+//INFO SECTION//
+
+.locations-community{
+    height: 300px;
+    background-color: $main-color;
+
+    .flex-container{
+        position: relative;
+        top: 150px;
+
+    }
+
+    article h3{
+            color:$font-button-color;
+            font-family:$heading-font;
+            text-transform: uppercase;
+            font-size: 2.6rem;
+            letter-spacing:1.6px;
+            font-weight: 400;
+        }
+
+        p{
+            font-family: $other-font;
+            line-height: 29px;
+            margin: 0 auto;
+        }
+    }
+
+    .locations h3::before{
+        i{
+            background-color: $main-color;
+        }
+    }
+
+    article.community{
+        position: relative;
+        left: 150px;
+    }
+
+
+
+
+
+.blog-contact{
+    background-color: $main-color;
+    height: 400px;
+
+    .wrapper{
+        padding-top: 70px;
+    }
+
+    article
+
+        h3{
+            color:$font-button-color ;
+            font-family:$heading-font;
+            text-transform: uppercase;
+            font-size: 2.6rem;
+            letter-spacing:1.6px;
+            font-weight: 400;
+        }
+
+        p{
+            line-height: 29px;
+            margin: 0 auto;
+        }
+
+        article.get-in-touch{
+            position: relative;
+            left: 150px;
+        }
+    }
+    
+

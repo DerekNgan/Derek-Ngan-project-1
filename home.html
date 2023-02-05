@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Shoe-Kloset</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/304aeb4f74.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 <!-- ******************************************** -->
@@ -23,8 +22,11 @@
                         <li><a href="#">Contact</a></li>
                     </nav>
         </div>
-        <div class="wrapper header">
+        <div class="header flex-container">
             <h1>Find<span>somethng</span>new</h1>
+            <figure>
+                <img src="./assets/home-box-header.png" alt="">
+            </figure>
         </div>
     </header>
 <!-- HEADER SECTION END -->
@@ -33,12 +35,9 @@
 <!-- ABOUT SECTION -->
     <main>
         <section class="about">
-            <figure>
-                <img src="" alt="four pairs of shoes with some colorful balls around them">
-            </figure>
             <div class="wrapper">
                 <h2>What is under the sea</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sunt architecto fuga labore excepturi ipsa similique sit? Blanditiis quisquam consectetur voluptate iusto perspiciatis, assumenda commodi, placeat veritatis deserunt officiis architecto.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sunt architecto fuga labore excepturi ipsa similique sit? Blanditiis quisquam consectetur voluptate iusto perspiciatis, assumenda commodi, placeat veritatis deserunt officiis architecto. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias iure quasi ea ratione dolor id et fuga similique nemo impedit, inventore eligendi explicabo recusandae sint laboriosam. Provident magnam voluptates corrupti.</p>
                 <a href="#">Find out more</a>
             </div>
         </section>
@@ -47,10 +46,10 @@
 <!-- ******************************************** -->
 <!-- OPTIONS/ADDITIONS SECTION -->
 <!-- ******************************************** -->
-        <section class="addtions">
-            <figure>
-                <img src="" alt="pair of white Nike sneakers">
-            <figure>
+        <section class="additions">
+            <figure class="flex-container">
+                <img src="/assets/left-image.jpg" alt="pair of white Nike sneakers">
+            </figure>
                 <article>
                     <h3>New additions</h3>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, ut exercitationem ipsam quibusdam voluptas doloremque accusamus perspiciatis laboriosam cum quia ab veniam. Quas fugiat, unde debitis possimus tempora corporis voluptate.</p>
@@ -64,7 +63,7 @@
                 <a href="#">read more</a>
             </article>
             <figure>
-                <img src="" alt="different styles of heels">
+                <img src="/assets/right-image.jpg" alt="different styles of heels">
             </figure>
         </section>
 <!-- OPTIONS/ADDITIONS SECTION END -->
@@ -72,22 +71,36 @@
 
 <!-- ******************************************** -->
 <!-- LINKS SECTIONS -->
-        <section class="links">
+        <section class="locations-community ">
             <div class="wrapper flex-container">
                 <!-- links icons in CSS and position with ::before/flex -->
-                <h3>Locations</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
-                <h3>Community</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
-                <h3>Blog</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
-                <h3>Get in touch</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
-                <figure>
-                    <img src="" alt="pair of nice stylish shoes with gold lining">
-                </figure>
+                <article class="locations">
+                    <h3 class="locations"><i class="fa-solid fa-circle-location-arrow"></i>Locations</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
+                </article>
+                <article class="community">
+                    <h3 class="community">Community</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
+                </article>
             </div>
-        </section>
+         </section>       
+            
+            <section class="blog-contact">
+                <div class="wrapper flex-container">
+                    <article class="blog">
+                        <h3>Blog</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
+                    </article>
+                    <article class="get-in-touch">
+                        <h3>Get in touch</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
+                    </article>
+                </div>
+            </section>
+            
+                <figure>
+                    <img src="/assets/banner.jpg" alt="pair of nice stylish shoes with gold lining">
+                </figure>
 <!-- LINKS SECTIONS END -->
 <!-- ******************************************** -->
 

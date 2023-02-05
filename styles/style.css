@@ -1,3 +1,6 @@
+@import 'https://fonts.googleapis.com';
+@import 'https://fonts.gstatic.com';
+@import 'https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pompiere&display=swap';
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -233,32 +236,205 @@ img {
   height: auto;
 }
 
-.wrapper {
-  max-width: 1200px;
-  width: 90%;
-  margin: auto;
+.about {
+  background-color: #fae5ff;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+.about h2 {
+  color: #4c0341;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Pompiere", cursive;
+  font-size: 2.6rem;
+}
+.about p {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  line-height: 1.45rem;
+  margin-bottom: 40px;
+}
+.about a {
+  font-size: 1rem;
+  background-color: #4c0341;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+.additions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.additions figure {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+.additions article {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding-right: 200px;
+}
+.additions article h3 {
+  font-size: 2.1rem;
+  font-family: "Pompiere", cursive;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.additions article p {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 40px;
+  line-height: 1.45rem;
+}
+.additions article a {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  background-color: #882c07;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.additions img {
+  -webkit-box-shadow: 40px 40px 0px 1px rgb(254, 111, 25);
+          box-shadow: 40px 40px 0px 1px rgb(254, 111, 25);
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
 }
 
-a {
-  text-decoration: none;
+.options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.options figure {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+.options article {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: end;
+  padding-left: 200px;
+}
+.options article h3 {
+  font-size: 2.1rem;
+  font-family: "Pompiere", cursive;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.options article p {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  padding-bottom: 40px;
+  line-height: 1.45rem;
+}
+.options article a {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  background-color: #882c07;
+  color: #ffffff;
+  padding: 10px 20px;
+}
+.options img {
+  -webkit-box-shadow: -40px 40px 0px 1px rgb(254, 111, 25);
+          box-shadow: -40px 40px 0px 1px rgb(254, 111, 25);
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+  position: relative;
+  z-index: 1;
 }
 
-ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.locations-community {
+  height: 300px;
+  background-color: #fae5ff;
+}
+.locations-community .flex-container {
+  position: relative;
+  top: 150px;
+}
+.locations-community article h3 {
+  color: #4c0341;
+  font-family: "Pompiere", cursive;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+}
+.locations-community p {
+  font-family: "Lato", sans-serif;
+  line-height: 29px;
+  margin: 0 auto;
 }
 
-li {
-  list-style-type: none;
+.locations h3::before i {
+  background-color: #fae5ff;
 }
 
-figure {
-  margin: 0;
+article.community {
+  position: relative;
+  left: 150px;
+}
+
+.blog-contact {
+  background-color: #fae5ff;
+  height: 400px;
+}
+.blog-contact .wrapper {
+  padding-top: 70px;
+}
+.blog-contact article h3 {
+  color: #4c0341;
+  font-family: "Pompiere", cursive;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+  letter-spacing: 1.6px;
+  font-weight: 400;
+}
+.blog-contact p {
+  line-height: 29px;
+  margin: 0 auto;
+}
+.blog-contact article.get-in-touch {
+  position: relative;
+  left: 150px;
 }
 
 header {
@@ -284,8 +460,6 @@ header h1 {
   font-family: "Pompiere", cursive;
   font-size: 5.5rem;
   line-height: 3.2rem;
-  -webkit-transform: translate(-100px, 150px);
-          transform: translate(-100px, 150px);
 }
 
 div.flex-container {
@@ -312,8 +486,8 @@ div.flex-container nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 35%;
-  -webkit-transform: translate(120px, 30px);
-          transform: translate(120px, 30px);
+  -webkit-transform: translate(200px, 45px);
+          transform: translate(200px, 45px);
 }
 div.flex-container span {
   display: -webkit-box;
@@ -342,4 +516,51 @@ nav.menu li a {
   line-height: 29px;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header h1 {
+  -webkit-transform: translate(72%, -50%);
+          transform: translate(72%, -50%);
+}
+.header figure {
+  width: 46%;
+}
+.header img {
+  position: relative;
+  top: 160px;
+  left: 100px;
+  width: 90%;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+figure {
+  margin: 0;
 }

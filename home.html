@@ -5,21 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Shoe-Kloset</title>
-    <link rel="stylesheet" href="./styles/style.css">
     <script src="https://kit.fontawesome.com/304aeb4f74.js" crossorigin="anonymous"></script>
-    
+    <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 <body>
 <!-- ******************************************** -->
 <!-- HEADER SECTION -->
-    <header>
+    <header id="home">
         <div class="wrapper flex-container">
-                <a href="#">Shoe<span>Kloset</span></a>
+                <a href="#home">Shoe<span>Kloset</span></a>
                     <nav class="menu">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </nav>
         </div>
         <div class="header flex-container">
@@ -34,7 +34,7 @@
 <!-- ******************************************** -->
 <!-- ABOUT SECTION -->
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="wrapper">
                 <h2>What is under the sea</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sunt architecto fuga labore excepturi ipsa similique sit? Blanditiis quisquam consectetur voluptate iusto perspiciatis, assumenda commodi, placeat veritatis deserunt officiis architecto. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias iure quasi ea ratione dolor id et fuga similique nemo impedit, inventore eligendi explicabo recusandae sint laboriosam. Provident magnam voluptates corrupti.</p>
@@ -48,7 +48,7 @@
 <!-- ******************************************** -->
         <section class="additions">
             <figure class="flex-container">
-                <img src="/assets/left-image.jpg" alt="pair of white Nike sneakers">
+                <img src="./assets/left-image.jpg" alt="pair of white Nike sneakers">
             </figure>
                 <article>
                     <h3>New additions</h3>
@@ -63,7 +63,7 @@
                 <a href="#">read more</a>
             </article>
             <figure>
-                <img src="/assets/right-image.jpg" alt="different styles of heels">
+                <img src="./assets/right-image.jpg" alt="different styles of heels">
             </figure>
         </section>
 <!-- OPTIONS/ADDITIONS SECTION END -->
@@ -75,11 +75,11 @@
             <div class="wrapper flex-container">
                 <!-- links icons in CSS and position with ::before/flex -->
                 <article class="locations">
-                    <h3 class="locations"><i class="fa-solid fa-circle-location-arrow"></i>Locations</h3>
+                    <h3 class="locations"><i class="fa-solid fa-location-arrow"></i>Locations</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
                 </article>
                 <article class="community">
-                    <h3 class="community">Community</h3>
+                    <h3 class="community"><i class="fa-solid fa-group-arrows-rotate"></i>Community</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
                 </article>
             </div>
@@ -88,11 +88,11 @@
             <section class="blog-contact">
                 <div class="wrapper flex-container">
                     <article class="blog">
-                        <h3>Blog</h3>
+                        <h3><i class="fa-regular fa-file"></i>Blog</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
                     </article>
                     <article class="get-in-touch">
-                        <h3>Get in touch</h3>
+                        <h3><i class="fa-solid fa-square-phone-flip"></i>Get in touch</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem alias aut, ipsa aliquam accusamus odio aliquid facilis officia, in et totam molestias, enim minus explicabo deserunt excepturi eveniet eum cum.</p>
                     </article>
                 </div>
@@ -105,33 +105,40 @@
 <!-- ******************************************** -->
 
 <!-- ******************************************** -->
-<!-- POPLUAR SECTION -->
+<!-- POPULAR SECTION -->
     <section class="popular">
-        <div class="wrapper flex-container">
+            <div class=" popular-flex-container">
             <figure>
-                <img src="" alt="pair of nice black heels on a white furry carpet">
+                <img src="./assets/square-image.jpg" alt="pair of nice black heels on a white furry carpet">
             </figure>
             <article>
                 <h3>Popular this month</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium dolore quibusdam mollitia quasi ipsum architecto at tempora tempore debitis magnam sapiente, possimus asperiores voluptate deleniti accusamus odit, sed illum vero.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium dolore quibusdam mollitia quasi ipsum architecto at tempora tempore debitis magnam sapiente, possimus asperiores voluptate deleniti accusamus odit, sed illum vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident rem delectus dicta saepe placeat laboriosam unde in voluptates odit, vero ex omnis, neque facere optio cum quasi repellendus, odio est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi iste, sint architecto fuga praesentium temporibus delectus optio velit molestias ab nemo repellat nesciunt reiciendis, eius repellendus cumque officia qui cupiditate!</p>
                 <a href="#">Find out more</a>
             </article>
         </div>
-        <div class="flex-container">
+        </div>
+    </section>
+<!-- POPULAR SECTOIN END -->
+<!-- ******************************************** -->
+<!-- ******************************************** -->
+<!-- GALLERY SECTION -->
+    <section class="gallery">
             <ul>
-                <li><img src="" alt="person with a pair of yellow sneakers and blue jeans looking down at a parking lot from the top of a building"></li>
-                <li><img src="" alt="pair of brown boots with 2 inch heel paired with a pair of black jeans"></li>
-                <li><img src="" alt="shoe rack with two levels and 6 different shoes"></li>
+                <div class="gallery-flex-container">
+                <li class="first"><img src="./assets/gallery-image-1.jpg" alt="person with a pair of yellow sneakers and blue jeans looking down at a parking lot from the top of a building"></li>
+                <li><img src="./assets/gallery-image-3.jpg" alt="pair of brown boots with 2 inch heel paired with a pair of black jeans"></li>
+                <li class="last"><img src="./assets/gallery-image-2.jpg" alt="shoe rack with two levels and 6 different shoes"></li>
             </ul>
         </div>
     </section>
-<!-- POPLUAR SECTION END -->
+<!-- GALLERY SECTION END -->
 <!-- ******************************************** -->
 
 <!-- ******************************************** -->
 <!-- FOOTER SECTION -->
 <footer>
-    <p>Copyright 2019 Juno College</p>
+    <p>Copyright<i class="fa-regular fa-copyright"></i> 2019 Juno College</p>
 </footer>
     </main>
 </body>

@@ -21,15 +21,13 @@ div.flex-container{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
-    
 
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 35%;
-        transform: translate(200px, 45px);
-    }
+}
+.blog-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 35%;
 }
 
 section.blog-post{

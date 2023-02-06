@@ -1,4 +1,4 @@
-header {
+.home-header {
     background-image: url(../assets/header-image.jpg);
     min-height: 100vh;
     background-size: cover;
@@ -32,6 +32,10 @@ div.flex-container{
         justify-content: space-between;
         width: 35%;
         transform: translate(200px, 45px);
+
+        li{
+            list-style-type: none;
+        }
     }
 
     span{

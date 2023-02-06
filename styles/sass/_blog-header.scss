@@ -1,0 +1,206 @@
+header.blog-header{
+    background-image: url(../assets/blog-header.jpg);
+    min-height: 70vh;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    h1{
+        text-align: center;
+        position: relative;
+        text-transform: uppercase;
+        font-family: $heading-font;
+        color: $font-button-color;
+        font-size: 4rem;
+        line-height: 4.6rem;
+        top: 200px;
+        left: -30px;
+    }
+}
+
+div.flex-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 35%;
+        transform: translate(200px, 45px);
+    }
+}
+
+section.blog-post{
+    background-color: $main-color;
+}
+
+nav.blog-menu a{
+    font-family: $other-font;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.blog-post-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+    .blog-header-image{
+        transform: translateY(-45%);
+        width: 55%;
+        z-index: 1;
+        
+        img{
+            box-shadow: -30px 30px 0px 1px rgba(254,111,25,1);
+            position: relative;
+        }
+    }
+
+    .wrapper-blog-flex{
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: flex-end;
+        background-color: $main-color;
+
+        article.blog-content{
+            background-color: $secondary-color;
+            width: 56.4%;
+            padding: 9% 5% 2% 5%;
+            transform: translateY(-35%);
+            position: relative;
+
+
+            h2{
+              font-size:$main-heading-font;
+              font-family:$heading-font;
+              text-transform: uppercase;
+              color: $font-button-color;
+            }
+
+            h3{
+                padding-top: 10px;
+                font-family: $other-font;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+            
+            p{
+                font-size: 1rem;
+                letter-spacing: 1px;
+                line-height: 1.45rem;
+                font-family: $other-font;
+                padding-right: 150px;
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+.aside-flex{
+    position: absolute;
+    left: 0;
+    min-width: 35%;
+    height: auto;
+}
+
+.aside-text{
+    background-color: $secondary-color;
+    padding: 100px 50px 50px 50px;
+    position: absolute;
+    transform: translate(48.3%, 20%);
+    max-width: 70%;
+
+    h2{
+    font-size: 1.5rem;
+    letter-spacing: 1.3px;
+    font-family: $heading-font;
+    text-transform: uppercase;
+    color: $font-button-color;
+    padding-bottom: 10px;
+    }
+
+    p{
+        font-size: 1rem;
+        font-family: $other-font;
+        letter-spacing: 1px;
+        line-height: 1.45rem;
+        margin: 0 auto;
+        padding-bottom: 40px;
+    }
+
+    ul{
+        font-size: 1rem;
+        font-family: $other-font;
+        letter-spacing: 1px;
+        line-height: 1.45rem;
+        padding-left: 20px;
+    }
+}
+
+
+.sidebar-image{
+    max-width: 100%;
+    left: 0px;
+    box-shadow: 29px 0px 0px 0px rgba(255,255,255,1);
+    position: relative;
+    top: 150px;
+
+    img{
+        position: relative;
+        transform: translateY(-29px);
+        z-index: 1;
+    }
+}
+
+.comment{
+    background-color: $main-color;
+    text-align: center;
+    position: relative;
+    bottom: 300px;
+
+    h2{
+        text-transform: uppercase;
+        color: $font-button-color;
+        font-family: $heading-font;
+        letter-spacing: 1.2px;
+        font-size: $main-heading-font;
+        font-weight: 400;
+        transform: translateY(-20px);
+    }
+}
+    
+    .comment-flex{
+        background-color: $main-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+
+        article{
+            max-width: 50%;
+            text-align: left;
+        }
+    }
+    
+    .comment-2-flex{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: $main-color;
+
+        article{
+            max-width: 50%;
+            text-align: left;
+        }
+    }
+
+    .comment-box-flex{
+        background-color: $main-color;
+    }
+
+

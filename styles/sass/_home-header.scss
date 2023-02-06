@@ -19,6 +19,9 @@
         font-family: $heading-font;
         font-size: 5.5rem;
         line-height: 3.2rem;
+        position: relative;
+        left: 300px;
+        bottom: 200px;
     }
 }
 div.flex-container{
@@ -31,6 +34,9 @@ div.flex-container{
         flex-direction: row;
         justify-content: space-between;
         width: 35%;
+        position: relative;
+        left: 350px;
+        top: 40px;
 
 
         li{

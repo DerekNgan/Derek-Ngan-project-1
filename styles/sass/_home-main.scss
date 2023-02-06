@@ -79,7 +79,8 @@
 
     img{
         box-shadow: 40px 40px 0px 1px rgba(254,111,25,1);
-        transform:translateY(-40px);
+        position: relative;
+        bottom: 40px;
     }
 }
 
@@ -125,7 +126,7 @@
 
     img{
         box-shadow: -40px 40px 0px 1px rgba(254,111,25,1);
-        transform:translateY(40px);
+        top: 40px;
         position: relative;
         z-index: 1;
     }

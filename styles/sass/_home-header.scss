@@ -1,6 +1,6 @@
 .home-header {
     background-image: url(../assets/header-image.jpg);
-    min-height: 100vh;
+    height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -11,37 +11,58 @@
             display: flex;
             flex-direction: column;
     }
-    }
-    
+}
 
     h1{
         color: $font-button-color;
         font-family: $heading-font;
         font-size: 5.5rem;
         line-height: 3.2rem;
-        position: relative;
-        left: 300px;
-        bottom: 200px;
     }
 }
-div.flex-container{
+
+.menu-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a{
+        flex-grow: 3.5;
+        padding-top: 50px;
+    }
+
+    .nav-bar-flex{
+        flex-grow: 1;
+        position: relative;
+        left: 80px;
+    }
+}
+
+
+.nav-bar-flex a{
+    color: $font-color;
+    font-family: $other-font;
+    letter-spacing: 1.1px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.nav-bar-flex{
+    display: flex;
+    justify-content: space-evenly;
+
+    li{
+        list-style-type: none;
+    }
+}
+
+
+.header{
     display: flex;
     flex-direction:row;
-    justify-content: space-between;
-
-    nav{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 35%;
-        position: relative;
-        left: 350px;
-        top: 40px;
-
-
-        li{
-            list-style-type: none;
-        }
     }
 
     span{
@@ -59,14 +80,6 @@ div.flex-container{
 
     }
 
-    .top-left{
-        position: relative;
-        right: 200px;
-    }
-}
-
-
-
 nav.menu li a{
     font-family: $other-font;
     font-weight: 700;
@@ -80,17 +93,8 @@ nav.menu li a{
     align-items: center;
 
     h1{
-        
-    }
-
-    figure{
-        width: 49%;
-    }
-
-    img{
-    position: relative;
-    top: 160px;
-    float: right;
-    width: 91%;
+        position: relative;
+        bottom: 200px;
+        left: 190px;
     }
 }

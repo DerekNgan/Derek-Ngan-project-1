@@ -1,124 +1,152 @@
-header.blog-header{
+header{
     background-image: url(../assets/blog-header.jpg);
-    min-height: 70vh;
     background-size:cover;
     background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 
     h1{
-        text-align: center;
-        position: relative;
         text-transform: uppercase;
         font-family: $heading-font;
         color: $font-button-color;
         font-size: 4rem;
         line-height: 4.6rem;
-        top: 200px;
-        left: -30px;
-    }
-
-    a{
-        position: relative;
-        right: 150px;
     }
 }
 
-div.flex-container{
+
+.blog-header-flex{
     display: flex;
-    flex-direction:row;
-    justify-content: space-between;
-
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
 }
+
+
+
+.blog-flex{
+    display: flex;
+    flex-direction:column;
+    align-items: end;
+    position: relative;
+    
+    img{
+        float: right;
+    }
+
+    article{
+        background-color: $secondary-color;
+        width: 955px;
+        height: 100%;
+        padding: 80px 150px 50px 50px;
+    }
+}
+
 .blog-menu{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 35%;
+    width: 100%;
 }
+
+
+.blog-menu a{
+    color: $font-button-color;
+    font-family: $heading-font;
+    letter-spacing: 1.1px;
+    line-height: 1.8rem;
+    font-size: 1.79rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    flex-grow: 4;
+}
+
+.blog-nav-bar-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.blog-nav-bar-flex li{
+    list-style-type: none;
+    
+    a{
+        color: $font-color;
+        font-family: $other-font;
+        letter-spacing: 1.1px;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+
 
 section.blog-post{
     background-color: $main-color;
+    position: relative;
+                
+    h2{
+        font-size:$main-heading-font;
+        font-family:$heading-font;
+        text-transform: uppercase;
+        color: $font-button-color;
+        font-size: $main-heading-font;
+        
+    }
+
+    p{
+        font-size: 1rem;
+        font-family: $other-font;
+
+    }
+
+    h3{
+        padding-top: px;
+        font-family: $other-font;
+        font-weight: 700;
+        font-size: 1rem;
+        padding-bottom: 40px;
+
+        
+    }
 }
 
-nav.blog-menu a{
-    font-family: $other-font;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
+article.blog-post{
+    background-color: $secondary-color;
 }
+    
 
-.blog-post-flex{
+        
+.blog-flex{
     display: flex;
     flex-direction: column;
-    align-items: end;
-    
-    .blog-header-image{
-        position: relative;
-        width: 55%;
-        z-index: 1;
-        bottom: 390px;
-        
-        img{
-            box-shadow: -30px 30px 0px 1px rgba(254,111,25,1);
-            position: relative;
-        }
-    }
-
-    .wrapper-blog-flex{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: flex-end;
-        background-color: $main-color;
-
-        article.blog-content{
-            background-color: $secondary-color;
-            width: 56.4%;
-            padding: 9% 5% 2% 5%;
-            bottom: 400px;
-            position: relative;
-
-
-            h2{
-              font-size:$main-heading-font;
-              font-family:$heading-font;
-              text-transform: uppercase;
-              color: $font-button-color;
-            }
-
-            h3{
-                padding-top: 10px;
-                font-family: $other-font;
-                font-weight: 700;
-                font-size: 1rem;
-            }
-            
-            p{
-                font-size: 1rem;
-                letter-spacing: 1px;
-                line-height: 1.45rem;
-                font-family: $other-font;
-                padding-right: 150px;
-                padding-top: 20px;
-            }
-        }
-    }
 }
 
-.aside-flex{
+.aside-image-flex{
     position: absolute;
-    left: 0;
-    min-width: 35%;
-    height: auto;
+    top: 0;
+    margin-top: 100px;
+    box-shadow: 60px 0px 0px -30px rgba(255,255,255,1);
+    z-index: 3;
 }
 
 .aside-text{
-    background-color: $secondary-color;
-    padding: 100px 50px 50px 50px;
     position: absolute;
-    top: 720px;
-    left: 300px;
-    max-width: 70%;
-    transform: translateX(6%);
+    top: 470px;
+    width: 370px;
+    padding-left: 20px;
+    margin-left: 173px;
+    padding-top: 120px;
+    background-color: $secondary-color;
+    height: 60vh;
+}
+
 
     h2{
     font-size: 1.5rem;
@@ -127,6 +155,7 @@ nav.blog-menu a{
     text-transform: uppercase;
     color: $font-button-color;
     padding-bottom: 10px;
+    font-weight: 400;
     }
 
     p{
@@ -138,35 +167,18 @@ nav.blog-menu a{
         padding-bottom: 40px;
     }
 
-    ul{
+    .posts{
         font-size: 1rem;
         font-family: $other-font;
         letter-spacing: 1px;
         line-height: 1.45rem;
         padding-left: 20px;
     }
-}
 
-
-.sidebar-image{
-    max-width: 100%;
-    left: 0px;
-    box-shadow: 29px 0px 0px 0px rgba(255,255,255,1);
-    position: relative;
-    top: 150px;
-
-    img{
-        position: relative;
-        bottom: 30px;
-        z-index: 1;
-    }
-}
-
-.comment{
+.comment-1{
     background-color: $main-color;
     text-align: center;
-    position: relative;
-    bottom: 300px;
+
 
     h2{
         text-transform: uppercase;
@@ -175,21 +187,43 @@ nav.blog-menu a{
         letter-spacing: 1.2px;
         font-size: $main-heading-font;
         font-weight: 400;
-        position: relative;
-        bottom: 30px;
+        padding: 50px 80px 30px 0;
     }
 }
     
-    .comment-flex{
+    .comment-1-flex{
         background-color: $main-color;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         align-items: flex-end;
+        
+
+        figure{
+            padding: 0 40px 115px 0;
+        }
 
         article{
             max-width: 50%;
             text-align: left;
+            padding-right: 50px;
+
+            p{
+                padding-right: 50px;
+            }
+
+            h3{
+                line-height: 1.45rem;
+                letter-spacing: 1px;
+                font-size: 1rem;
+                font-family:$other-font;
+                font-weight: 700;
+            }
+
+            img{
+                padding-bottom: 18px;
+            }
+
         }
     }
     
@@ -200,14 +234,84 @@ nav.blog-menu a{
         align-items: flex-end;
         background-color: $main-color;
 
-        article{
-            max-width: 50%;
-            text-align: left;
+        figure{
+            padding: 0 40px 115px 0;
         }
+
+        article{
+            text-align: left;
+            width: 50%;
+            padding-right: 50px;
+
+            p{
+                padding-right: 50px;
+            }
+
+            h3{
+                line-height: 1.45rem;
+                letter-spacing: 1px;
+                font-size: 1rem;
+                font-family:$other-font;
+                font-weight: 700;
+            }
+        }
+        
+    }
+
+    .comment-forms{
+        background-color: $main-color;
     }
 
     .comment-box-flex{
         background-color: $main-color;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        fieldset{
+            border: none;
+            margin-left: 500px;
+        }
+
+        input{
+            border: none;
+            border-bottom: 2px solid $box-shadow-color;
+            background-color: $main-color;
+            text-transform: capitalize;
+            padding: 1px 75px 10px 30px;
+            margin-bottom: 20px;
+        }
+
+        input[type=text]{
+            margin-right: 15px;
+        }
     }
 
+    .comment-button-flex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
+        textarea{
+            background-color: $main-color;
+            border: 2px solid $box-shadow-color;
+            margin-left: 27%;
+            margin-bottom: 40px;
+            padding-left: 20px;
+            padding-top: 20px
+        }
+
+        button{
+            width:41.5%;
+            margin-left: 27%;
+            margin-bottom: 80px;
+            border: none;
+            background-color: $font-button-color;
+            color: $secondary-color;
+            padding: 10px;
+        }
+    }
+
+footer p {
+    padding: 0;
+}

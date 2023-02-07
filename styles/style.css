@@ -569,23 +569,30 @@ footer p i {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.home-header div.header {
+.home-header .header {
   padding-top: 40px;
-}
-.home-header div.header span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.home-header h1 {
+.home-header .header h1 {
   color: #4c0341;
   font-family: "Pompiere", cursive;
   font-size: 5.5rem;
   line-height: 3.2rem;
+  position: relative;
+  bottom: 200px;
+  left: 190px;
 }
 
 .menu-flex {
@@ -677,25 +684,14 @@ nav.menu li a {
   text-transform: uppercase;
 }
 
-.header {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.header h1 {
-  position: relative;
-  bottom: 200px;
-  left: 190px;
-}
-
-header {
+.blog-header {
   background-image: url(../assets/blog-header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
 }
-header h1 {
+.blog-header h1 {
   text-transform: uppercase;
   font-family: "Pompiere", cursive;
   color: #4c0341;

@@ -4,22 +4,27 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    div.header{
+    .header{
         padding-top: 40px;
-    
-        span{
-            display: flex;
-            flex-direction: column;
-    }
-}
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
 
     h1{
         color: $font-button-color;
         font-family: $heading-font;
         font-size: 5.5rem;
         line-height: 3.2rem;
+        position: relative;
+        bottom: 200px;
+        left: 190px;
     }
 }
+
+}
+
+
 
 .menu-flex{
     display: flex;
@@ -89,12 +94,3 @@ nav.menu li a{
     text-transform: uppercase;
 }
 
-.header{
-    align-items: center;
-
-    h1{
-        position: relative;
-        bottom: 200px;
-        left: 190px;
-    }
-}

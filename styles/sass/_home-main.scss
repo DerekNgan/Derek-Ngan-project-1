@@ -36,15 +36,23 @@
 //WHAT IS UNDER THE SEA SECTION END//
 //**************************************//
 //ADDITIONS AND OPTIONS SECTION//
-.additions{
+.additions-flex-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
     
-    figure{
-        flex-basis: 60%;
+    .additions{
+        flex-basis: 40%;
+        padding-bottom: 50px;
+
+        img{
+            width: 100%;
+            box-shadow: 40px 40px 0px 1px rgba(254,111,25,1);
+            bottom: 40px;
+            position: relative;
+        }
     }
 
     article{
@@ -76,28 +84,30 @@
         }
     }
 
-
-
-    img{
-        box-shadow: 40px 40px 0px 1px rgba(254,111,25,1);
-        bottom: 40px;
-    }
 }
 
-.options{
+.options-flex-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     
-    figure{
+    .options{
         flex-basis: 40%;
+        padding-top: 50px;
+        
+
+        img{
+            width: 100%;
+            box-shadow: -40px 40px 0px 1px rgba(254,111,25,1);
+            top: 40px;
+        }
     }
 
     article{
-        flex-basis:40%;
+        flex-basis:44.5%;
         text-align: end;
-        padding-left: 100px;
+        padding-left: 150px;
 
         h3{
             font-size: 2.1rem;
@@ -123,11 +133,6 @@
             padding: 10px 20px;
         }
     }
-
-    img{
-        box-shadow: -40px 40px 0px 1px rgba(254,111,25,1);
-        top: 40px;
-    }
 }
 //  NEW ADDITIONS AND OPTIONS SECTION END//
 //********************************************//
@@ -138,7 +143,7 @@
     padding-bottom: 100px;
     background-color: $main-color;
 
-    .flex-container{
+    .locations-flex-container{
         position: relative;
         top: 150px;
         display: flex;
@@ -189,6 +194,11 @@
     background-color: $main-color;
     padding-bottom: 100px;
     padding-top: 40px;
+
+    .blog-flex-container{
+        display: flex;
+        flex-direction: row;
+    }
 
     .wrapper{
         padding-top: 70px;

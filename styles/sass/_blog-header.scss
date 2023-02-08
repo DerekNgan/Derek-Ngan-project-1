@@ -15,34 +15,6 @@
 }
 
 
-.blog-header-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 75%;
-}
-
-
-
-.blog-flex{
-    display: flex;
-    flex-direction:column;
-    align-items: end;
-    position: relative;
-    
-    img{
-        float: right;
-    }
-
-    article{
-        background-color: $secondary-color;
-        width: 955px;
-        height: 100%;
-        padding: 80px 150px 50px 50px;
-    }
-}
-
 .blog-menu{
     display: flex;
     flex-direction: row;
@@ -52,13 +24,13 @@
 
 
 .blog-menu a{
-    color: $font-button-color;
+    color: $font-color;
     font-family: $heading-font;
     letter-spacing: 1.1px;
     line-height: 1.8rem;
     font-size: 1.79rem;
     text-transform: capitalize;
-    font-weight: 700;
+    font-weight: 400;
     flex-grow: 4;
 }
 
@@ -85,233 +57,78 @@
     }
 }
 
-
-
-section.blog-post{
-    background-color: $main-color;
-    position: relative;
-                
-    h2{
-        font-size:$main-heading-font;
-        font-family:$heading-font;
-        text-transform: uppercase;
-        color: $font-button-color;
-        font-size: $main-heading-font;
-        
-    }
-
-    p{
-        font-size: 1rem;
-        font-family: $other-font;
-
-    }
-
-    h3{
-        padding-top: px;
-        font-family: $other-font;
-        font-weight: 700;
-        font-size: 1rem;
-        padding-bottom: 40px;
-
-        
-    }
+.hamburger{
+    display: none;
+    padding-top: 50px;
 }
 
-article.blog-post{
-    background-color: $secondary-color;
-}
+@media (max-width:600px)
+{
+    .blog-nav-bar-flex{
+        display: none;
+    }
+
+    .hamburger{
+        display: initial;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        padding-right: 20px;
+    }
     
-
-        
-.blog-flex{
-    display: flex;
-    flex-direction: column;
-}
-
-.aside-image-flex{
-    position: absolute;
-    top: 0;
-    margin-top: 100px;
-    box-shadow: 60px 0px 0px -30px rgba(255,255,255,1);
-    z-index: 3;
-}
-
-.aside-text{
-    position: absolute;
-    top: 470px;
-    width: 370px;
-    padding-left: 20px;
-    margin-left: 173px;
-    padding-top: 120px;
-    background-color: $secondary-color;
-    height: 60vh;
-}
-
-
-    h2{
-    font-size: 1.5rem;
-    letter-spacing: 1.3px;
-    font-family: $heading-font;
-    text-transform: uppercase;
-    color: $font-button-color;
-    padding-bottom: 10px;
-    font-weight: 400;
+    .checkbox input{
+        width: 50px;
+        height: 60px;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        padding: 20px;
+        z-index: 7;
     }
-
-    p{
-        font-size: 1rem;
-        font-family: $other-font;
-        letter-spacing: 1px;
-        line-height: 1.45rem;
-        margin: 0 auto;
-        padding-bottom: 40px;
-    }
-
-    .posts{
-        font-size: 1rem;
-        font-family: $other-font;
-        letter-spacing: 1px;
-        line-height: 1.45rem;
-        padding-left: 20px;
-    }
-
-.comment-1{
-    background-color: $main-color;
-    text-align: center;
-
-
-    h2{
-        text-transform: uppercase;
-        color: $font-button-color;
-        font-family: $heading-font;
-        letter-spacing: 1.2px;
-        font-size: $main-heading-font;
-        font-weight: 400;
-        padding: 50px 80px 30px 0;
-    }
-}
     
-    .comment-1-flex{
-        background-color: $main-color;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-        
+    .checkbox input:checked ~ ul{
+        transform: translateY(20px);
+        list-style: none;
 
-        figure{
-            padding: 0 40px 115px 0;
-        }
+        li{
+            margin-bottom: 10px;
 
-        article{
-            max-width: 50%;
-            text-align: left;
-            padding-right: 50px;
-
-            p{
-                padding-right: 50px;
-            }
-
-            h3{
-                line-height: 1.45rem;
-                letter-spacing: 1px;
-                font-size: 1rem;
-                font-family:$other-font;
+            a{
+                padding-top: 0;
+                margin-top: 10px;
                 font-weight: 700;
             }
 
-            img{
-                padding-bottom: 18px;
+            a:hover{
+                color: $font-button-color;
             }
-
         }
     }
     
-    .comment-2-flex{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: flex-end;
-        background-color: $main-color;
-
-        figure{
-            padding: 0 40px 115px 0;
-        }
-
-        article{
-            text-align: left;
-            width: 50%;
-            padding-right: 50px;
-
-            p{
-                padding-right: 50px;
-            }
-
-            h3{
-                line-height: 1.45rem;
-                letter-spacing: 1px;
-                font-size: 1rem;
-                font-family:$other-font;
-                font-weight: 700;
-            }
-        }
-        
+    .hamburger span{
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 5px;
+    }
+    
+    .blog-hamburger{
+        transform: translateY(-500px);
+        transition: all .3s;
     }
 
-    .comment-forms{
-        background-color: $main-color;
+    section.blog-post, .sidebar-image, .blog-flex img, .aside-text, .aside-image-flex, .blog-post-image{
+        position: static;
     }
 
-    .comment-box-flex{
-        background-color: $main-color;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-
-        fieldset{
-            border: none;
-            margin-left: 500px;
-        }
-
-        input{
-            border: none;
-            border-bottom: 2px solid $box-shadow-color;
-            background-color: $main-color;
-            text-transform: capitalize;
-            padding: 1px 75px 10px 30px;
-            margin-bottom: 20px;
-        }
-
-        input[type=text]{
-            margin-right: 15px;
-        }
+    .blog-flex-2 img, .sidebar-image img, .comment-1-flex figure, .comment-1-flex article, .comment-2-flex figure, .comment-2-flex article .comment-box-flex fieldset .comment-button-flex textarea .comment-button-flex button{
+        position: static;
     }
 
-    .comment-button-flex{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        textarea{
-            background-color: $main-color;
-            border: 2px solid $box-shadow-color;
-            margin-left: 27%;
-            margin-bottom: 40px;
-            padding-left: 20px;
-            padding-top: 20px
-        }
-
-        button{
-            width:41.5%;
-            margin-left: 27%;
-            margin-bottom: 80px;
-            border: none;
-            background-color: $font-button-color;
-            color: $secondary-color;
-            padding: 10px;
-        }
+    .blog-post-image{
+        width: 50vw;
     }
 
-footer p {
-    padding: 0;
-}
+    }

@@ -123,12 +123,36 @@
         position: static;
     }
 
-    .blog-flex-2 img, .sidebar-image img, .comment-1-flex figure, .comment-1-flex article, .comment-2-flex figure, .comment-2-flex article .comment-box-flex fieldset .comment-button-flex textarea .comment-button-flex button{
+    fieldset input{
+        width: 50vw;
+    }
+
+    .comment-button-flex textarea{
+        position: static;
+        height: 40vh;
+        width: 60vw;
+        }
+    }
+
+    .comment-button-flex button{
+        position: static;
+    }
+
+    .blog-flex-2 img, .sidebar-image img, .comment-1-flex figure, .comment-1-flex article, .comment-2-flex figure, .contact-info fieldset{
+        position: static;
+    }
+
+    textarea{
         position: static;
     }
 
     .blog-post-image{
-        width: 50vw;
+        display: none;
     }
+    
 
-    }
+    
+    
+    
+
+    

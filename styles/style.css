@@ -755,9 +755,9 @@ section.blog-post p {
 
 .blog-post-image {
   position: relative;
-  bottom: 400px;
-  width: 53vw;
-  margin-bottom: -300px;
+  bottom: 380px;
+  width: 60vw;
+  margin-bottom: -250px;
 }
 
 .blog-flex-2 {
@@ -1029,21 +1029,22 @@ form input::placeholder {
 .comment-button-flex textarea {
   background-color: #fae5ff;
   border: 2px solid #fe6f19;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   padding-left: 20px;
   padding-top: 20px;
   position: relative;
   left: 237px;
 }
 .comment-button-flex button {
-  width: 68%;
-  margin-bottom: 80px;
+  width: 48vw;
+  margin-bottom: 100px;
   border: none;
   background-color: #4c0341;
   color: #ffffff;
   padding: 10px;
-  position: relative;
-  left: 237px;
+  position: absolute;
+  bottom: 0;
+  right: 179px;
 }
 .comment-button-flex textarea {
   resize: none;
@@ -1076,6 +1077,7 @@ form input::placeholder {
 
 footer p {
   padding: 0;
+  margin-top: 5em;
 }
 
 .blog-header {
@@ -1211,13 +1213,31 @@ footer p {
   section.blog-post, .sidebar-image, .blog-flex img, .aside-text, .aside-image-flex, .blog-post-image {
     position: static;
   }
-  .blog-flex-2 img, .sidebar-image img, .comment-1-flex figure, .comment-1-flex article, .comment-2-flex figure, .comment-2-flex article .comment-box-flex fieldset .comment-button-flex textarea .comment-button-flex button {
-    position: static;
-  }
-  .blog-post-image {
+  fieldset input {
     width: 50vw;
   }
+  .comment-button-flex textarea {
+    position: static;
+    height: 40vh;
+    width: 60vw;
+  }
 }
+.comment-button-flex button {
+  position: static;
+}
+
+.blog-flex-2 img, .sidebar-image img, .comment-1-flex figure, .comment-1-flex article, .comment-2-flex figure, .contact-info fieldset {
+  position: static;
+}
+
+textarea {
+  position: static;
+}
+
+.blog-post-image {
+  display: none;
+}
+
 .wrapper {
   max-width: 1500px;
   width: 95%;

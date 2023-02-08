@@ -36,9 +36,9 @@ section.blog-post{
 
 .blog-post-image{
     position: relative;
-    bottom: 400px;
-    width: 53vw;
-    margin-bottom: -300px;
+    bottom: 380px;
+    width: 60vw;
+    margin-bottom: -250px;
 }
     
 .blog-flex-2{
@@ -269,7 +269,7 @@ section.blog-post{
         textarea{
             background-color: $main-color;
             border: 2px solid $box-shadow-color;
-            margin-bottom: 40px;
+            margin-bottom: 60px;
             padding-left: 20px;
             padding-top: 20px;
             position: relative;
@@ -277,14 +277,15 @@ section.blog-post{
         }
 
         button{
-            width: 68%;
-            margin-bottom: 80px;
+            width: 48vw;
+            margin-bottom: 100px;
             border: none;
             background-color: $font-button-color;
             color: $secondary-color;
             padding: 10px;
-            position: relative;
-            left: 237px;
+            position: absolute;
+            bottom: 0;
+            right: 179px;
         }
 
         textarea{
@@ -299,4 +300,5 @@ section.blog-post{
 
 footer p {
     padding: 0;
+    margin-top: 5em;
 }

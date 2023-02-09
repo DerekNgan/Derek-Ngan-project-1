@@ -1,0 +1,164 @@
+.contact-header{
+    background-image: url(/assets/contact-image.jpg);
+    background-size: cover;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    h1{
+        text-transform: uppercase;
+        font-family: $heading-font;
+        color: $font-button-color;
+        font-size: 4rem;
+        line-height: 4.6rem;
+    }
+}
+
+.contact-header-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 65%;
+}
+
+.contact-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-menu a{
+    color: $font-color;
+    font-family: $heading-font;
+    letter-spacing: 1.1px;
+    line-height: 1.8rem;
+    font-size: 1.79rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    flex-grow: 8;
+}
+
+.contact-menu a:hover{
+    color: $font-button-color
+}
+
+.contact-menu a:focus{
+    color: $font-button-color;
+}
+
+.contact-nav-bar-flex a:hover{
+    color: $secondary-color;
+    background-color: $font-button-color;
+}
+
+.contact-nav-bar-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 100px;
+
+    a{
+    padding: 5px 10px 5px 10px
+}
+
+}
+
+.contact-nav-bar-flex li{
+    list-style-type: none;
+    
+    a{
+        color: $font-color;
+        font-family: $other-font;
+        letter-spacing: 1.1px;
+        line-height: 1.5rem;
+        font-size: 1rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+.contact-burger{
+    display: none;
+    padding-top: 50px;
+}
+
+@media (max-width: 700px){
+    html{
+        font-size: 2rem;
+    }
+
+    .info{
+        height: 100%;
+    }
+
+    .info footer{
+        position: static;
+    }
+
+    .contact-nav-bar-flex{
+        display: none;
+    }
+
+    .contact-burger{
+        display: initial;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        padding-right: 20px;
+    }
+    
+    .contact-checkbox input{
+        width: 50px;
+        height: 60px;
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        padding: 20px;
+        z-index: 7;
+    }
+    
+    .contact-checkbox input:checked ~ ul{
+        transform: translateY(20px);
+        list-style: none;
+
+        li{
+            margin-bottom: 10px;
+
+            a{
+                padding-top: 0;
+                margin-top: 10px;
+                font-weight: 700;
+            }
+
+            a:hover{
+                color: $font-button-color;
+            }
+        }
+    }
+    
+    .contact-burger span{
+        display: block;
+        width: 40px;
+        height: 3px;
+        background-color: black;
+        margin-bottom: 5px;
+    }
+    
+    .contact-hamburger{
+        transform: translateY(-500px);
+        transition: all .3s;
+    }
+
+    .contact-menu{
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    
+}
+

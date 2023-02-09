@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Shoe-Kloset-Blog</title>
     <script src="https://kit.fontawesome.com/304aeb4f74.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
 
-    <header class="blog-header">
+    <header class="blog-header" id="blog-page">
         <div class="wrapper blog-flex">
                 <nav class="blog-menu">
                             <a href="#">Shoe<span>Kloset</span></a>
@@ -106,21 +106,23 @@
     <div class="comment-forms">
         <div class="comment-box-flex">
             <form action="#" method="get" class="contact-info">
-            <fieldset>
+            <fieldset class="blog-comment">
                 <label class="sr-only" for="name">Name</label>
                 <input type="text" id="name" required minlength="1" maxlength="10" name="name" placeholder="name" size="41">
                 <label class="sr-only" for="email">Email</label>
-                <input type="email" id="email" required minlength="50" maxlength="100" name="email" placeholder="email address" size="40">
+                <input type="email" id="email" required minlength="20" maxlength="100" name="email" placeholder="email address" size="40">
             </fieldset>
+            <div class="comment-button-flex">
+                <textarea name="" id="" cols="95" rows="8" placeholder="Comment"></textarea>
+                <button type="submit">Post Comment</button>
+            </div>
             </form>
         </div>
-        </div>
-        <div class="comment-button-flex">
-            <textarea name="" id="" cols="95" rows="8" placeholder="Comment"></textarea>
-            <button>Post Comment</button>
-        </div>
+    </div>
+
    </section> 
-    <footer><p>Copyright<i class="fa-regular fa-copyright"></i> 2019 Juno College</p></footer>
+
+    <footer class="blog-footer"><p>Copyright<i class="fa-regular fa-copyright"></i> 2019 Juno College</p></footer>
 </section>
 
 </body>

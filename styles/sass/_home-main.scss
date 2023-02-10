@@ -367,6 +367,23 @@
         .popular-flex-container figure{
             position: static;
         }
+
+        .popular-flex-container figure{
+            flex-basis: 0
+        }
+    
+        .popular-flex-container figure img{
+            display: none;
+        }
+    
+        .popular-flex-container article{
+            flex-basis: 100%;
+    
+            p{
+                padding-right: 0;
+            }
+        }
+    
     }
 
  

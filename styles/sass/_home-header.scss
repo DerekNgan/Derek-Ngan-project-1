@@ -266,3 +266,17 @@ padding-top: 50px;
         }
     }
 }
+
+.popular-flex-container article {
+    text-align: center;
+}
+
+@media (max-width: 400px){
+    .header-title h1{
+        left: 75px;
+    }
+
+    .gallery-flex img{
+        display: none;
+    }
+}

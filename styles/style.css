@@ -599,6 +599,20 @@ footer p i {
   .popular-flex-container figure {
     position: static;
   }
+  .popular-flex-container figure {
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+  .popular-flex-container figure img {
+    display: none;
+  }
+  .popular-flex-container article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .popular-flex-container article p {
+    padding-right: 0;
+  }
 }
 .home-header {
   background-image: url(../assets/header-image.jpg);
@@ -873,6 +887,18 @@ nav.menu li a {
   }
   .blog-contact .blog-flex-container .get-in-touch h3 {
     right: 0;
+  }
+}
+.popular-flex-container article {
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .header-title h1 {
+    left: 75px;
+  }
+  .gallery-flex img {
+    display: none;
   }
 }
 .contact-header {
@@ -1387,7 +1413,7 @@ section.blog-post p {
 
 .sidebar-image img {
   width: 35vw;
-  z-index: 7;
+  z-index: 4;
   position: relative;
   -webkit-box-shadow: 40px 10px 0px -10px rgb(255, 255, 255);
           box-shadow: 40px 10px 0px -10px rgb(255, 255, 255);
@@ -1793,6 +1819,7 @@ form input::placeholder {
   font-size: 1.79rem;
   text-transform: capitalize;
   font-weight: 400;
+  z-index: 7;
 }
 
 .blog-menu a:hover {

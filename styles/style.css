@@ -1108,7 +1108,7 @@ nav.menu li a {
 
 .info {
   background-color: #fae5ff;
-  height: 60vh;
+  height: 55vh;
 }
 
 .contact-icons {
@@ -1248,7 +1248,7 @@ nav.menu li a {
 
 @media (min-width: 701px) and (max-width: 900px) {
   .info {
-    height: 70vh;
+    height: 55vh;
   }
   .info-links-flex {
     text-align: center;

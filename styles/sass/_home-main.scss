@@ -233,7 +233,7 @@
             left: -30px;
         }
 
-        article.get-in-touch{
+        .get-in-touch{
             position: relative;
             left: 100px;
         }
@@ -342,5 +342,31 @@
     }
     //FOOTER SECTION END//
     //*********************************//
-
     }
+    //*********************************//
+    // MEDIA QUERIES//
+    @media(max-width: 1000px){
+            .home-header .menu-flex .nav-bar-flex{
+            position: static;
+        }
+        .header-figure img{
+            display: none;
+        }
+        .additions-flex-container article{
+            padding-right: 0;
+        }
+        .options-flex-container article{
+            padding-left: 0;
+        }
+        .locations-community .locations-flex-container{
+            width: 70%;
+        }
+        .blog-contact .blog-flex-container{
+            width: 70%;
+        }
+        .popular-flex-container figure{
+            position: static;
+        }
+    }
+
+ 

@@ -27,6 +27,17 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    padding-top: 30px;
+
+    ul{
+        position: absolute;
+        right: 200px;
+        top: 50px;
+
+        li{
+            padding-right: 50px;
+        }
+    }
 }
 
 .contact-menu a{
@@ -37,7 +48,7 @@
     font-size: 1.79rem;
     text-transform: capitalize;
     font-weight: 400;
-    flex-grow: 8;
+    padding-top: 15px
 }
 
 .contact-menu a:hover{
@@ -57,7 +68,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    flex-grow: 1;
     align-items: center;
     margin-left: 100px;
 

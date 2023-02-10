@@ -145,6 +145,7 @@ section.blog-post{
         flex-direction: row;
         justify-content: flex-end;
         align-items: flex-end;
+        padding-top: 40px;
         
 
         figure{
@@ -299,6 +300,8 @@ section.blog-post{
     padding: 0;
     margin-top: 5em;
 }
+
+
 
 @media (max-width:700px){
     html{

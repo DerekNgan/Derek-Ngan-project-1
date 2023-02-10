@@ -5,31 +5,98 @@
     background-repeat: no-repeat;
     position: relative;
 
-    nav{
+    .menu-flex{
         position: fixed;
-        right: 200px;
-        left: 200px;
-    }
-
-    .header-title{
-        padding-top: 40px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-
-    h1{
-        color: $font-button-color;
-        font-family: $heading-font;
-        font-size: 5.5rem;
-        line-height: 3.2rem;
-        position: relative;
-        top: 300px;
-        left: 190px;
+        z-index: 2;
+        width: 100%;
     }
+
+        .top-left{
+            padding-top: 50px;
+        }
+    
+        .nav-bar-flex{
+            position: absolute;
+            right: 300px;
+            top: 40px;
+
+            li{
+                padding-right: 50px;
+            }
+
+            a{
+                padding: 5px;
+            }
+        }
 }
 
+.header-title{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+h1{
+    color: $font-button-color;
+    font-family: $heading-font;
+    font-size: 5.5rem;
+    line-height: 3.2rem;
+    position: relative;
+    top: 300px;
+    left: 190px;
 }
+}
+span{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: $font-color;
+    font-family: $heading-font;
+    letter-spacing: 1.1px;
+    line-height: 1.5rem;
+    font-size: 1.79rem;
+}
+
+.menu-flex a:hover{
+    color: $font-button-color;
+}
+
+.menu-flex a:focus{
+    color: $font-button-color;
+}
+
+.nav-bar-flex a:hover{
+    color: $secondary-color;
+    background-color: $font-button-color;
+}
+
+.nav-bar-flex a:focus{
+        color: $secondary-color;
+    background-color: $font-button-color;
+}
+
+nav.menu li a{
+font-family: $other-font;
+font-weight: 700;
+font-size: 1rem;
+line-height: 29px;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+
+.header-burger{
+display: none;
+padding-top: 50px;
+}
+
 
 .header-figure{
     position: absolute;
@@ -42,25 +109,7 @@
     }
 }
 
-.menu-flex{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 2;
 
-    a{
-        flex-grow: 3.5;
-        padding-top: 50px;
-        position: relative;
-    }
-
-    .nav-bar-flex{
-        flex-grow: 1;
-        position: relative;
-        left: 80px;
-    }
-}
 
 
 .nav-bar-flex a{
@@ -88,35 +137,7 @@
     flex-direction:row;
     }
 
-    span{
-        display: flex;
-        flex-direction: column;
-    }
 
-    a{
-        padding-top: 30px;
-        color: $font-color;
-        font-family: $heading-font;
-        letter-spacing: 1.1px;
-        line-height: 1.5rem;
-        font-size: 1.79rem;
-
-    }
-
-nav.menu li a{
-    font-family: $other-font;
-    font-weight: 700;
-    font-size: 1rem;
-    line-height: 29px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-}
-
-
-.header-burger{
-    display: none;
-    padding-top: 50px;
-}
 
 @media (max-width:700px)
 {
@@ -182,5 +203,66 @@ nav.menu li a{
     .header-hamburger{
         transform: translateY(-500px);
         transition: all .3s;
+    }
+
+    .additions-flex-container .additions{
+        flex-basis: 0;
+    }
+
+    .additions img{
+        display: none;
+    }
+
+    .additions-flex-container article{
+        flex-basis: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+
+    .options-flex-container .options{
+        flex-basis:0;
+    }
+
+    .options img{
+        display: none
+    }
+
+    .options-flex-container article{
+        flex-basis: 100%;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .locations-flex-container .locations h3, .locations-flex-container .community h3{
+        position: static;
+    }
+
+    .locations-flex-container .community{
+        left: 0;
+        padding-top: 20px;
+    }
+
+    .locations-flex-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .blog-contact .blog-flex-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .blog-contact .blog-flex-container .blog{
+        padding-bottom: 20px;
+        h3{
+            right: 0;
+        }
+    }
+    .blog-contact .blog-flex-container .get-in-touch{
+        left: 0;
+
+        h3{
+            right: 0;
+        }
     }
 }

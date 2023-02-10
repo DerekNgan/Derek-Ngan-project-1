@@ -106,6 +106,7 @@
         padding-top: 20px;
         resize: none;
         text-transform: capitalize;
+        width: 100%;
 }
 
 .contact-button-flex textarea::placeholder{
@@ -136,6 +137,46 @@
     padding-top: 0;
 }
 
+@media (min-width: 701px) and (max-width: 900px)
+
+{
+    .info{
+        height: 70vh;
+    }
+
+    .info-links-flex{
+        text-align: center;
+    }
+    .contact-submit-flex{
+        margin-bottom: 10px;
+        margin-right: 0;
+        right: 223px;
+    }
+    .contact-submit-flex .contact-form input{
+        width: 90%;
+    }
+
+    .contact-button-flex textarea{
+        width:85%;
+    }
+    .info-links-flex{
+        top: 290px;
+
+        ul{
+            width: 100%;
+
+            i{
+                font-size: 2rem;
+            }
+        }
+        
+    }
+    .contact-footer{
+        top: 320px;
+    }
+    }
+
+
 @media (max-width: 700px){
     .info .contact-submit-flex form{
         background-color: $secondary-color;
@@ -146,6 +187,7 @@
 
     .info .contact-submit-flex{
         background-color: $main-color;
+        box-shadow: none;
     }
 
     .info .contact-submit-flex{

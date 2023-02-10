@@ -3,7 +3,7 @@
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
+    height: 80vh;
 
     h1{
         text-transform: uppercase;
@@ -28,6 +28,18 @@
     justify-content: space-between;
     width: 100%;
     padding-top: 30px;
+    position: fixed;
+    z-index: 7;
+
+    ul{
+        position: absolute;
+        right: 300px;
+        top: 50px;
+
+        li{
+            padding-right: 50px;
+        }
+    }
 }
 
 
@@ -39,18 +51,23 @@
     font-size: 1.79rem;
     text-transform: capitalize;
     font-weight: 400;
-    flex-grow: 4;
 }
 
 .blog-menu a:hover{
-    color: $font-button-color
+    color: $font-button-color;
 }
 
 .blog-menu a:focus{
     color: $font-button-color;
 }
 
+
 .blog-nav-bar-flex a:hover{
+    color: $secondary-color;
+    background-color: $font-button-color;
+}
+
+.blog-nav-bar-flex a:focus{
     color: $secondary-color;
     background-color: $font-button-color;
 }
@@ -58,8 +75,7 @@
 .blog-nav-bar-flex{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    flex-grow: 1;
+    justify-content: space-between; 
     align-items: center;
     margin-left: 50px;
 
@@ -88,10 +104,68 @@
     padding-top: 50px;
 }
 
+@media (min-width: 701px) and (max-width: 900px){
+    .blog-nav-bar-flex{
+        right: 0;
+    }
+
+    .full-comment{
+        padding-left: 0;
+
+        .comment-1 h1{
+            position: relative;
+            right: 150px;
+        }
+    }
+    .blog-article{
+        padding-right: 0px;
+    }
+
+    .comment-1-flex figure{
+        left: -50px;
+    }
+    .comment-1-flex article{
+        left: 0px;
+        padding-right: 0;
+    }
+
+    .comment-2-flex figure{
+        left: -50px;
+    }
+
+    .comment-2-flex article{
+        left: 0;
+        padding-right: 0;
+    }
+
+    .contact-info fieldset{
+        left: 95px;
+    }
+
+    .comment-button-flex textarea{
+        width: 80%;
+        left: 0;
+        right: 0;
+    }
+
+    .commnent-button-flex button{
+        right: 227px;
+    }
+}
+
+
 @media (max-width:700px)
 {
     html{
         font-size: 1rem;
+    }
+
+    .contact-info {
+        margin-left: 100px;
+
+        fieldset{
+            margin-left: 20px;
+        }
     }
 
     .blog-menu a{

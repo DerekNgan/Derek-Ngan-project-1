@@ -1,12 +1,17 @@
 //WHAT IS UNDER THE SEA SECTION//
 .about {
     background-color:$main-color;
-    height: 600px;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    .wrapper{
+        padding: 50px;
+    }
+    
 
     h2{
         color:$font-button-color ;
@@ -34,6 +39,9 @@
     }
     }
 //WHAT IS UNDER THE SEA SECTION END//
+//**************************************//
+
+
 //**************************************//
 //ADDITIONS AND OPTIONS SECTION//
 .additions-flex-container{
@@ -80,7 +88,7 @@
             text-transform: uppercase;
             background-color: $footer-links-color;
             color: $secondary-color;
-            padding: 10px 20px;
+            padding: 13px 20px;
         }
     }
 
@@ -136,6 +144,8 @@
 }
 //  NEW ADDITIONS AND OPTIONS SECTION END//
 //********************************************//
+
+
 //********************************************//
 //INFO SECTION//
 
@@ -294,13 +304,14 @@
             background-color: $footer-links-color;
             padding: 15px 20px;
             color:$secondary-color ;
+          }
         }
-    }
-
-
     }
     //POPULAR SECTION END//
     //*********************************//
+
+
+
     //*********************************//
     //GALLERY SECTION//
     .gallery{
@@ -321,6 +332,8 @@
     }
     //GALLERY SECTION END//
     //*********************************//
+
+    
     //*********************************//
     //FOOTER SECTION//
     footer{
@@ -340,50 +353,10 @@
                 padding-right: 2px;
             }
     }
+}
     //FOOTER SECTION END//
     //*********************************//
-    }
-    //*********************************//
-    // MEDIA QUERIES//
-    @media(max-width: 1000px){
-            .home-header .menu-flex .nav-bar-flex{
-            position: static;
-        }
-        .header-figure img{
-            display: none;
-        }
-        .additions-flex-container article{
-            padding-right: 0;
-        }
-        .options-flex-container article{
-            padding-left: 0;
-        }
-        .locations-community .locations-flex-container{
-            width: 70%;
-        }
-        .blog-contact .blog-flex-container{
-            width: 70%;
-        }
-        .popular-flex-container figure{
-            position: static;
-        }
 
-        .popular-flex-container figure{
-            flex-basis: 0
-        }
     
-        .popular-flex-container figure img{
-            display: none;
-        }
-    
-        .popular-flex-container article{
-            flex-basis: 100%;
-    
-            p{
-                padding-right: 0;
-            }
-        }
-    
-    }
 
  

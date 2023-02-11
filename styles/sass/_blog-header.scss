@@ -26,14 +26,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
     padding-top: 30px;
-    position: fixed;
     z-index: 7;
 
     ul{
         position: absolute;
-        right: 300px;
+        right: 100px;
         top: 50px;
 
         li{
@@ -105,141 +103,7 @@
     padding-top: 50px;
 }
 
-@media (min-width: 701px) and (max-width: 900px){
-    .blog-nav-bar-flex{
-        right: 0;
-    }
 
-    .full-comment{
-        padding-left: 0;
-
-        .comment-1 h1{
-            position: relative;
-            right: 150px;
-        }
-    }
-    .blog-article{
-        padding-right: 0px;
-    }
-
-    .comment-1-flex figure{
-        left: -50px;
-    }
-    .comment-1-flex article{
-        left: 0px;
-        padding-right: 0;
-    }
-
-    .comment-2-flex figure{
-        left: -50px;
-    }
-
-    .comment-2-flex article{
-        left: 0;
-        padding-right: 0;
-    }
-
-    .contact-info fieldset{
-        left: 95px;
-    }
-
-    .comment-button-flex textarea{
-        width: 80%;
-        left: 0;
-        right: 0;
-    }
-
-    .commnent-button-flex button{
-        right: 227px;
-    }
-}
-
-
-@media (max-width:700px)
-{
-    html{
-        font-size: 1rem;
-    }
-
-    .contact-info {
-        margin-left: 100px;
-
-        fieldset{
-            margin-left: 20px;
-        }
-    }
-
-    .blog-menu a{
-        margin-top: 0.7em;
-        margin-left: 1em;
-    }
-
-    .blog-header-flex h1{
-        padding-bottom: 4em;
-    }
-
-    .aside-text .side-text{
-        position: static;
-        width: 100%;
-        text-align: center;
-    }
-
-    .blog-nav-bar-flex{
-        display: none;
-    }
-
-    .hamburger{
-        display: initial;
-        position: absolute;
-        z-index: 5;
-        top: 0;
-        right: 0;
-        padding-right: 20px;
-    }
-    
-    .checkbox input{
-        width: 50px;
-        height: 60px;
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        padding: 20px;
-        z-index: 7;
-    }
-    
-    .checkbox input:checked ~ ul{
-        transform: translateY(20px);
-        list-style: none;
-
-        li{
-            margin-bottom: 10px;
-
-            a{
-                padding-top: 0;
-                margin-top: 10px;
-                font-weight: 700;
-            }
-
-            a:hover{
-                color: $font-button-color;
-            }
-        }
-    }
-    
-    .hamburger span{
-        display: block;
-        width: 40px;
-        height: 3px;
-        background-color: black;
-        margin-bottom: 5px;
-    }
-    
-    .blog-hamburger{
-        transform: translateY(-500px);
-        transition: all .3s;
-    }
-
-    }
 
 
     

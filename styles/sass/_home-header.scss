@@ -6,7 +6,6 @@
     position: relative;
 
     .menu-flex{
-        position: fixed;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -21,8 +20,8 @@
     
         .nav-bar-flex{
             position: absolute;
-            right: 300px;
-            top: 40px;
+            right: 6%;
+            top: 4%;
 
             li{
                 padding-right: 50px;
@@ -40,20 +39,23 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
 
-h1{
-    color: $font-button-color;
-    font-family: $heading-font;
-    font-size: 5.5rem;
-    line-height: 3.2rem;
+.h1-box{
     position: relative;
-    top: 300px;
-    left: 190px;
-}
-}
-span{
-    display: flex;
-    flex-direction: column;
+
+    h1{
+        color: $font-button-color;
+        font-family: $heading-font;
+        font-size: 5.5rem;
+        line-height: 3.2rem;
+        position: absolute;
+        top: 200px;
+    }
+    span{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 a{
@@ -62,6 +64,12 @@ a{
     letter-spacing: 1.1px;
     line-height: 1.5rem;
     font-size: 1.79rem;
+    padding-left: 5px;
+
+    span{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .menu-flex a:hover{
@@ -102,15 +110,12 @@ padding-top: 50px;
     position: absolute;
     right: 0px;
     top: 220px;
-    width: 45%;
+    width: 46%;
 
     img{
         width: 100%;
     }
 }
-
-
-
 
 .nav-bar-flex a{
     color: $font-color;
@@ -131,152 +136,7 @@ padding-top: 50px;
     }
 }
 
-
 .header-title{
     display: flex;
     flex-direction:row;
     }
-
-
-
-@media (max-width:700px)
-{
-    html{
-        font-size: 1rem;
-    }
-
-    .blog-menu a{
-        margin-top: 0.7em;
-        margin-left: 1em;
-    }
-
-    .nav-bar-flex{
-        display: none;
-    }
-
-    .header-burger{
-        display: initial;
-        position: absolute;
-        z-index: 5;
-        top: 0;
-        right: 0;
-        padding-right: 20px;
-    }
-    
-    .header-checkbox input{
-        width: 50px;
-        height: 60px;
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        padding: 20px;
-        z-index: 7;
-    }
-    
-    .header-checkbox input:checked ~ ul{
-        transform: translateY(20px);
-        list-style: none;
-
-        li{
-            margin-bottom: 10px;
-
-            a{
-                padding-top: 0;
-                margin-top: 10px;
-                font-weight: 700;
-            }
-
-            a:hover{
-                color: $font-button-color;
-            }
-        }
-    }
-    
-    .header-burger span{
-        display: block;
-        width: 40px;
-        height: 3px;
-        background-color: black;
-        margin-bottom: 5px;
-    }
-    
-    .header-hamburger{
-        transform: translateY(-500px);
-        transition: all .3s;
-    }
-
-    .additions-flex-container .additions{
-        flex-basis: 0;
-    }
-
-    .additions img{
-        display: none;
-    }
-
-    .additions-flex-container article{
-        flex-basis: 100%;
-        text-align: center;
-        margin: 20px 0;
-    }
-
-
-    .options-flex-container .options{
-        flex-basis:0;
-    }
-
-    .options img{
-        display: none
-    }
-
-    .options-flex-container article{
-        flex-basis: 100%;
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .locations-flex-container .locations h3, .locations-flex-container .community h3{
-        position: static;
-    }
-
-    .locations-flex-container .community{
-        left: 0;
-        padding-top: 20px;
-    }
-
-    .locations-flex-container{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .blog-contact .blog-flex-container{
-        flex-direction: column;
-        text-align: center;
-    }
-    .blog-contact .blog-flex-container .blog{
-        padding-bottom: 20px;
-        h3{
-            right: 0;
-        }
-    }
-    .blog-contact .blog-flex-container .get-in-touch{
-        left: 0;
-
-        h3{
-            right: 0;
-        }
-    }
-}
-
-.popular-flex-container article {
-    text-align: center;
-}
-
-@media (max-width: 400px){
-    .header-title h1{
-        left: 75px;
-    }
-
-    .gallery-flex img{
-        display: none;
-    }
-}

@@ -1,3 +1,5 @@
+// *******************************//
+// INFO / COMMENT //
 .contact-info p{
     padding: 0;
 }
@@ -22,9 +24,13 @@
     padding-bottom: 5px;
 }
 
+.contact-info .postal{
+    padding-bottom: 5%;
+}
+
 .info{
     background-color: $main-color;
-    height: 55vh;
+    padding-top: 5%;
 }
 
 .contact-icons{
@@ -53,21 +59,18 @@
 }
 
 .contact-submit-flex{
-    margin-right: 150px;
+    right: 150px;
     position: absolute;
-    right: 0;
     bottom: 0;
     background-color: $secondary-color;
     display: flex;
     flex-direction: row;
     width: 48vw;
-    height: 60vh;
     box-shadow: -30px 30px 0px 1px rgba(254,111,25,1);
 
     form{
-        padding: 50px 0 50px 50px;
-        margin-left: 15px;
-        margin-top: 20px;
+        padding: 50px;
+        
 
 
         fieldset{
@@ -79,6 +82,8 @@
         border-bottom: 2px solid $box-shadow-color;
         padding-bottom: 15px;
         padding-left: 10px;
+        width: 49%;
+        background-color: $secondary-color;
     }
 
     input[type=text]{
@@ -88,13 +93,10 @@
 }
 }
 
-.info-links-flex{
-    position: relative;
-    top: 150px;
-}
-
 .contact-form{
-    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     border: none;
 }
 
@@ -118,7 +120,7 @@
     padding: 20px;
 
     button{
-        width: 39vw;
+        width: 100%;
         background-color: $footer-links-color;
         border: none;
         color: $secondary-color;
@@ -127,119 +129,14 @@
     }
 }
 
+// INFO / COMMENT END//
+// *******************************//
+
 .contact-footer{
-    position: relative;
     padding: 10px 0 10px 0;
-    top: 290px;
 }
 
 .contact-footer p{
     padding-top: 0;
 }
 
-@media (min-width: 701px) and (max-width: 900px)
-
-{
-    .info{
-        height: 55vh;
-    }
-
-    .info-links-flex{
-        text-align: center;
-    }
-    .contact-submit-flex{
-        margin-bottom: 10px;
-        margin-right: 0;
-        right: 223px;
-    }
-    .contact-submit-flex .contact-form input{
-        width: 90%;
-    }
-
-    .contact-button-flex textarea{
-        width:85%;
-    }
-    .info-links-flex{
-        top: 290px;
-
-        ul{
-            width: 100%;
-
-            i{
-                font-size: 2rem;
-            }
-        }
-        
-    }
-    .contact-footer{
-        top: 320px;
-    }
-    }
-
-
-@media (max-width: 700px){
-    .info .contact-submit-flex form{
-        background-color: $secondary-color;
-        margin: 0;
-        padding-left: 0;
-        width: 100%;
-    }
-
-    .info .contact-submit-flex{
-        background-color: $main-color;
-        box-shadow: none;
-    }
-
-    .info .contact-submit-flex{
-        position: static;
-        width: 100%;
-        height: 100%;
-    }
-
-    .info .info-links-flex{
-        position: static;
-        text-align: center;
-    }
-
-    .info .contact-button-flex{
-        text-align: center;
-        margin-top: 3em;
-
-        textarea{
-            width: 100%;
-        }
-    }
-
-    .info .contact-button-flex button{
-        width: 70%;
-    }
-
-    .info .contact-form{
-        text-align: center;
-        margin: 0;
-        padding: 0;
-        padding-left: 5em;
-
-        input[type=text]{
-            margin-right: 6em;
-        }
-        
-        input[type=email]{
-            margin-right: 6em;
-            padding-top: 2em;
-        }
-    }
-
-    .info .contact-icons{
-        width: 100%;
-        padding-top: 3em;
-
-        a{
-            font-size: 3rem;
-        }
-    }
-
-    .contact-info{
-        padding-bottom: 3em;
-    }
-}

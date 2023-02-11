@@ -1,3 +1,5 @@
+//*************************************//
+// BLOG MAIN//
 section.blog-post{
     background-color: $main-color;
     position: relative;
@@ -30,7 +32,7 @@ section.blog-post{
 
 .blog-post-image{
     position: relative;
-    bottom: 380px;
+    bottom: 300px;
     width: 60vw;
     margin-bottom: -250px;
 }
@@ -52,11 +54,14 @@ section.blog-post{
     width: 54.85vw;
     padding: 80px 150px 50px 30px;
 
+    .wrapper {
+        padding-top: 50px;
+
     h2, h3, p{
         padding-left: 30px;
     }
 }
-
+}
 .aside-text{
     position: absolute;
     top: 100px;
@@ -116,6 +121,12 @@ section.blog-post{
         line-height: 1.45rem;
         padding-left: 20px;
     }
+// BLOG MAIN END//
+//*************************************//
+
+
+//*************************************//
+//COMMENT SECTION//
 
 .full-comment{
     background: $main-color;
@@ -225,16 +236,16 @@ section.blog-post{
         margin-top: 50px;
     }
 
-    .comment-box-flex{
+    .contact-info fieldset{
+        border: none;
+        padding: 0 0 2% 0.7%;
+    }
+
+        .blog-comment{
         background-color: $main-color;
         display: flex;
         flex-direction: row;
-        justify-content: center;
-
-        fieldset{
-            border: none;
-            position: relative;
-            left: 237px;
+        justify-content: flex-end;
         }
 
         input{
@@ -242,16 +253,14 @@ section.blog-post{
             border-bottom: 2px solid $box-shadow-color;
             background-color: $main-color;
             text-transform: capitalize;
-            padding-bottom: 20px;
             margin-bottom: 20px;
-            padding-left: 40px;
-            padding-right: 10px;
+            padding: 0px 10px 20px 40px;
+            width: 33.3%
         }
 
         input[type=text]{
             margin-right: 25px;
         }
-    }
 
     form input::placeholder{
         color: black;
@@ -261,7 +270,7 @@ section.blog-post{
     .comment-button-flex{
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-end;
         background-color: $main-color;
 
         textarea{
@@ -270,20 +279,16 @@ section.blog-post{
             margin-bottom: 60px;
             padding-left: 20px;
             padding-top: 20px;
-            position: relative;
-            left: 237px;
+            width: 68%;
         }
 
         button{
-            width: 48vw;
+            width: 68.1%;
             margin-bottom: 100px;
             border: none;
             background-color: $font-button-color;
             color: $secondary-color;
-            padding: 10px;
-            position: absolute;
-            bottom: 0;
-            right: 179px;
+            padding: 10px 0 10px 0
         }
 
         textarea{
@@ -300,97 +305,7 @@ section.blog-post{
     padding: 0;
     margin-top: 5em;
 }
+//COMMENT END//
+//*************************************//
 
 
-
-@media (max-width:700px){
-    html{
-        font-size: 1rem;
-    }
-
-    .sidebar-image img{
-        display: none;
-    }
-
-    .side-text{
-        margin-bottom: 5em;
-    }
-    
-    section.blog-post, .sidebar-image, .blog-flex img, .aside-text, .aside-image-flex, .blog-post-image{
-        position: static;
-    }
-
-    fieldset input{
-        width: 50vw;
-    }
-
-    .comment-button-flex{
-        margin-right: 15em;
-    }
-
-    .contact-info fieldset{
-        margin-right: 12em;
-    }
-
-    .comment-button-flex textarea{
-        position: static;
-        height: 40vh;
-        width: 60vw;
-        }
-
-        .comment-button-flex button{
-            position: static;
-        }
-    
-        .blog-flex-2 img, .sidebar-image img, .comment-1-flex figure, .comment-1-flex article, .comment-2-flex figure, .contact-info fieldset{
-            position: static;
-        }
-    
-        textarea{
-            position: static;
-        }
-    
-        .blog-post-image{
-            display: none;
-        }
-
-        .comment-1{
-            text-align:left;
-        }
-
-        .comment-1-flex article{
-            max-width: 100%;
-            padding: 0;
-
-            p{
-                padding-bottom: 0;
-            }
-        }
-
-        .comment-1-flex img{
-            display: none;
-        }
-
-        .comment-2-flex article{
-            width: 100%;
-            position: static; 
-            padding-right: 0;
-        }
-
-        .comment-2-flex p{
-            padding-right: 8em;
-        }
-
-        .comment-2-flex img{
-            display: none;
-        }
-
-        .blog-article{
-            width: 100%;
-            text-align: center;
-            padding: 8em 4em 0 0;
-        }
-        .posts{
-            list-style-type: none;
-        }
-}

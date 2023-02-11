@@ -1,18 +1,14 @@
 //WHAT IS UNDER THE SEA SECTION//
 .about {
     background-color:$main-color;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+    padding-top: 8%;
+    padding-bottom: 8%;
 
     .wrapper{
         padding: 50px;
     }
     
-
     h2{
         color:$font-button-color ;
         font-weight: 400;
@@ -356,7 +352,3 @@
 }
     //FOOTER SECTION END//
     //*********************************//
-
-    
-
- 

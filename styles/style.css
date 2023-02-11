@@ -239,21 +239,9 @@ img {
 
 .about {
   background-color: #fae5ff;
-  height: 75vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
+  padding-top: 8%;
+  padding-bottom: 8%;
 }
 .about .wrapper {
   padding: 50px;
@@ -585,7 +573,6 @@ footer p i {
   height: 100vh;
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
 }
 .home-header .menu-flex {
   display: -webkit-box;
@@ -595,12 +582,6 @@ footer p i {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   z-index: 2;
   width: 100%;
 }
@@ -611,12 +592,29 @@ footer p i {
   position: absolute;
   right: 6%;
   top: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .home-header .nav-bar-flex li {
   padding-right: 50px;
+  list-style-type: none;
 }
 .home-header .nav-bar-flex a {
   padding: 5px;
+}
+
+.nav-bar-flex a {
+  color: #0d0d0d;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 1.1px;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .header-title {
@@ -715,38 +713,6 @@ nav.menu li a {
 }
 .header-figure img {
   width: 100%;
-}
-
-.nav-bar-flex a {
-  color: #0d0d0d;
-  font-family: "Lato", sans-serif;
-  letter-spacing: 1.1px;
-  line-height: 1.5rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.nav-bar-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-.nav-bar-flex li {
-  list-style-type: none;
-}
-
-.header-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
 }
 
 .contact-header {
@@ -1475,13 +1441,6 @@ form input::placeholder {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 50px;
 }
 .blog-nav-bar-flex a {
   padding: 5px 10px 5px 10px;

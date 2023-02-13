@@ -293,6 +293,7 @@
     .checkbox input:checked ~ ul{
         transform: translateY(20px);
         list-style: none;
+        right: 0;
 
         li{
             margin-bottom: 10px;
@@ -461,6 +462,7 @@
     .contact-checkbox input:checked ~ ul{
         transform: translateY(20px);
         list-style: none;
+        right: 0;
 
         li{
             margin-bottom: 10px;

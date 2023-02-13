@@ -1739,6 +1739,7 @@ figure {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
     list-style: none;
+    right: 0;
   }
   .checkbox input:checked ~ ul li {
     margin-bottom: 10px;
@@ -1871,6 +1872,7 @@ figure {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
     list-style: none;
+    right: 0;
   }
   .contact-checkbox input:checked ~ ul li {
     margin-bottom: 10px;

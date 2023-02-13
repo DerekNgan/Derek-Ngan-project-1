@@ -1967,6 +1967,7 @@ figure {
     margin: 0;
     padding-left: 0;
     width: 100%;
+    padding-right: 0;
   }
   .info .contact-submit-flex {
     background-color: #fae5ff;

@@ -716,7 +716,7 @@ nav.menu li a {
 }
 
 .contact-header {
-  background-image: url(/assets/contact-image.jpg);
+  background-image: url(../assets/contact-image.jpg);
   background-size: cover;
   height: 70vh;
   background-position: center;
@@ -1533,7 +1533,7 @@ figure {
   html {
     font-size: 1rem;
   }
-  .nav-bar-flex {
+  .home-header .menu-flex .nav-bar-flex {
     display: none;
   }
   .header-burger {

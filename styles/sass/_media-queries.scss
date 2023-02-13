@@ -343,7 +343,7 @@
         }
     
         fieldset input{
-            width: 50vw;
+            width: 45vw;
         }
     
         .comment-button-flex{
@@ -410,8 +410,45 @@
             .blog-article{
                 width: 100%;
                 text-align: center;
-                padding: 8em 4em 0 0;
+                padding: 100px 0 0 0;
+
+                .wrapper h2{
+                    padding-left: 0;
+                }
             }
+
+            .blog-post .wrapper .blog-date{
+                padding-left: 0;
+        }
+        
+            .blog-post .blog-article p{
+                padding-left: 0px;
+            }
+
+            .contact-info{
+                margin-left: 0px;
+            }
+
+            .contact-info .blog-comment{
+                margin-left: 0px;
+            }
+
+            .full-comment{
+                padding-left: 0px;
+
+                textarea{
+                    width: 100%;
+                }
+
+                button{
+                    width: 100%;
+                }
+            }
+
+            .comment-button-flex{
+                margin-right: 0px;
+            }
+
             .posts{
                 list-style-type: none;
             }

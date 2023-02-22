@@ -1,3 +1,7 @@
+function myFunction() {
+    const element = document.body
+    element.classList.toggle("dark-mode");
+  } 
 
 const navToggler = document.querySelector('.nav-toggler');
 const navMenu = document.querySelector('.menu-flex ul');
@@ -20,3 +24,6 @@ function navLinkClick(){
     navToggler.click();
     }
 }
+
+
+

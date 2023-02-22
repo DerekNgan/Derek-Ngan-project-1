@@ -568,6 +568,27 @@ footer p i {
   padding-right: 2px;
 }
 
+.dark-mode {
+  background-color: rgb(27, 29, 29);
+  color: white;
+}
+
+.dark-mode .about {
+  background-color: rgb(50, 61, 61);
+}
+
+.dark-mode .locations-community {
+  background-color: rgb(50, 61, 61);
+}
+
+.dark-mode .blog-contact {
+  background-color: rgb(50, 61, 61);
+}
+
+.dark-mode .gallery {
+  background-color: rgb(50, 61, 61);
+}
+
 .home-header {
   background-image: url(../assets/header-image.jpg);
   height: 100vh;

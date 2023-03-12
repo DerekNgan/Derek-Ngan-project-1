@@ -52,17 +52,37 @@
         font-size: 1rem;
     }
 
+    .about h2, .additions-flex-container article h3, .options-flex-container article h3, .locations-flex-container .locations h3, .locations-flex-container .community h3, .locations-community i, .blog-contact article h3, .blog-contact i, .popular-flex-container article h3 {
+        font-size: 1.5rem;
+    }
+
+    .about p, .additions-flex-container article p, .options-flex-container article p, .locations-community p, .blog-contact p, .popular-flex-container article p {
+        font-size: 0.7rem;
+    }
+
+    .about a, .additions-flex-container article a, .options-flex-container article a, .popular-flex-container article a{
+        font-size: 0.5rem;
+    }
+
+    .h1-box h1{
+        font-size: 3rem;
+        line-height: 2rem;
+    }
+
     .home-header .menu-flex .nav-bar-flex{
         display: none;
     }
 
     .header-burger{
         display: initial;
-        position: absolute;
+        position: fixed;
         z-index: 5;
-        top: 0;
         right: 0;
-        padding-right: 20px;
+    }
+
+    .header-checkbox{
+        position: relative;
+        left: 70%;
     }
     
     .header-checkbox input{
@@ -76,8 +96,10 @@
     }
     
     .header-checkbox input:checked ~ ul{
-        transform: translateY(20px);
+        transform: translateY(5%);
         list-style: none;
+        position: relative;
+        right: 75%;
 
         li{
             margin-bottom: 10px;
@@ -166,9 +188,21 @@
         h3{
             right: 0;
         }
+
     }
+
     .popular-flex-container article {
         text-align: center;
+    }
+
+    .gallery-flex{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer{
+        font-size: 0.7rem;
     }
 }
 
@@ -252,13 +286,25 @@
         }
     }
 
-    .blog-menu a{
-        margin-top: 0.7em;
-        margin-left: 1em;
+    .blog-header-flex h1{
+        padding-bottom: 2em;
+        font-size: 3rem;
     }
 
-    .blog-header-flex h1{
-        padding-bottom: 4em;
+    section.blog-post h2{
+        font-size: 2rem;
+    }
+
+    .blog-article h2{
+        margin-bottom: 10px;
+    }
+
+    section.blog-post h3.blog-date{
+        font-size: .7rem;
+    }
+
+    .blog-post .blog-article p, section.blog-post p, .posts{
+        font-size: .6rem;
     }
 
     .aside-text .side-text{
@@ -294,6 +340,8 @@
         transform: translateY(20px);
         list-style: none;
         right: 0;
+        background-color: $main-color;
+        padding: 10px;
 
         li{
             margin-bottom: 10px;
@@ -343,7 +391,7 @@
         }
     
         fieldset input{
-            width: 45vw;
+            width: 90vw;
         }
     
         .comment-button-flex{
@@ -352,6 +400,7 @@
     
         .contact-info fieldset{
             margin-right: 12em;
+            flex-direction: column;
         }
     
         .comment-button-flex textarea{
@@ -410,7 +459,7 @@
             .blog-article{
                 width: 100%;
                 text-align: center;
-                padding: 100px 0 0 0;
+                padding: 50px 0px 0px 0px;
 
                 .wrapper h2{
                     padding-left: 0;
@@ -500,6 +549,8 @@
         transform: translateY(20px);
         list-style: none;
         right: 0;
+        background-color: $main-color;
+        padding: 10px;
 
         li{
             margin-bottom: 10px;
@@ -534,7 +585,23 @@
         padding-left: 10px;
     }
 
+    .contact-header-flex h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+        text-align: center;
+    }
     
+    .contact-info h2{
+        font-size: 1rem;
+    }
+
+    .contact-info p{
+        font-size: .7rem;
+    }
+
+    .contact-submit-flex form input{
+        width: 90vw;
+    }
 }
 @media (min-width: 701px) and (max-width: 900px)
 
@@ -620,17 +687,15 @@
         align-items: center;
         margin: 0;
         padding: 0;
-        padding-left: 5em;
+        padding-left: .5em;
 
         input[type=text]{
             margin-right: 6em;
-            width: 80%;
         }
         
         input[type=email]{
             margin-right: 6em;
             padding-top: 2em;
-            width: 80%;
         }
     }
 
@@ -639,7 +704,7 @@
         padding-top: 3em;
 
         a{
-            font-size: 3rem;
+            font-size: 2rem;
         }
     }
 

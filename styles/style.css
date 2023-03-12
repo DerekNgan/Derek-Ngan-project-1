@@ -388,6 +388,9 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
+.locations-community .locations-flex-container article {
+  padding: 0px 25px 0px 50px;
+}
 .locations-community h3.locations {
   color: #4c0341;
   font-family: "Pompiere", cursive;
@@ -428,6 +431,9 @@ article.community {
   background-color: #fae5ff;
   padding-bottom: 100px;
   padding-top: 40px;
+}
+.blog-contact .blog-flex-container article {
+  padding: 0px 25px 0px 50px;
 }
 .blog-contact .blog-flex-container {
   display: -webkit-box;
@@ -700,6 +706,11 @@ nav.menu li a {
   text-transform: uppercase;
 }
 
+.header-hamburger {
+  background-color: #fae5ff;
+  padding: 25px;
+}
+
 .header-burger {
   display: none;
   padding-top: 50px;
@@ -898,7 +909,7 @@ nav.menu li a {
 .contact-submit-flex {
   right: 150px;
   position: absolute;
-  bottom: 0;
+  bottom: -75px;
   background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1026,6 +1037,7 @@ section.blog-post p {
   bottom: 300px;
   width: 60vw;
   margin-bottom: -250px;
+  margin-top: 10%;
 }
 
 .blog-flex-2 {
@@ -1533,16 +1545,31 @@ figure {
   html {
     font-size: 1rem;
   }
+  .about h2, .additions-flex-container article h3, .options-flex-container article h3, .locations-flex-container .locations h3, .locations-flex-container .community h3, .locations-community i, .blog-contact article h3, .blog-contact i, .popular-flex-container article h3 {
+    font-size: 1.5rem;
+  }
+  .about p, .additions-flex-container article p, .options-flex-container article p, .locations-community p, .blog-contact p, .popular-flex-container article p {
+    font-size: 0.7rem;
+  }
+  .about a, .additions-flex-container article a, .options-flex-container article a, .popular-flex-container article a {
+    font-size: 0.5rem;
+  }
+  .h1-box h1 {
+    font-size: 3rem;
+    line-height: 2rem;
+  }
   .home-header .menu-flex .nav-bar-flex {
     display: none;
   }
   .header-burger {
     display: initial;
-    position: absolute;
+    position: fixed;
     z-index: 5;
-    top: 0;
     right: 0;
-    padding-right: 20px;
+  }
+  .header-checkbox {
+    position: relative;
+    left: 70%;
   }
   .header-checkbox input {
     width: 50px;
@@ -1554,9 +1581,11 @@ figure {
     z-index: 7;
   }
   .header-checkbox input:checked ~ ul {
-    -webkit-transform: translateY(20px);
-            transform: translateY(20px);
+    -webkit-transform: translateY(5%);
+            transform: translateY(5%);
     list-style: none;
+    position: relative;
+    right: 75%;
   }
   .header-checkbox input:checked ~ ul li {
     margin-bottom: 10px;
@@ -1644,6 +1673,21 @@ figure {
   .popular-flex-container article {
     text-align: center;
   }
+  .gallery-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer {
+    font-size: 0.7rem;
+  }
 }
 @media (max-width: 400px) {
   .header-title h1 {
@@ -1703,12 +1747,21 @@ figure {
   .contact-info fieldset {
     margin-left: 20px;
   }
-  .blog-menu a {
-    margin-top: 0.7em;
-    margin-left: 1em;
-  }
   .blog-header-flex h1 {
-    padding-bottom: 4em;
+    padding-bottom: 2em;
+    font-size: 3rem;
+  }
+  section.blog-post h2 {
+    font-size: 2rem;
+  }
+  .blog-article h2 {
+    margin-bottom: 10px;
+  }
+  section.blog-post h3.blog-date {
+    font-size: 0.7rem;
+  }
+  .blog-post .blog-article p, section.blog-post p, .posts {
+    font-size: 0.6rem;
   }
   .aside-text .side-text {
     position: static;
@@ -1740,6 +1793,8 @@ figure {
             transform: translateY(20px);
     list-style: none;
     right: 0;
+    background-color: #fae5ff;
+    padding: 10px;
   }
   .checkbox input:checked ~ ul li {
     margin-bottom: 10px;
@@ -1780,13 +1835,17 @@ figure {
     position: static;
   }
   fieldset input {
-    width: 45vw;
+    width: 90vw;
   }
   .comment-button-flex {
     margin-right: 15em;
   }
   .contact-info fieldset {
     margin-right: 12em;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .comment-button-flex textarea {
     position: static;
@@ -1832,7 +1891,7 @@ figure {
   .blog-article {
     width: 100%;
     text-align: center;
-    padding: 100px 0 0 0;
+    padding: 50px 0px 0px 0px;
   }
   .blog-article .wrapper h2 {
     padding-left: 0;
@@ -1900,6 +1959,8 @@ figure {
             transform: translateY(20px);
     list-style: none;
     right: 0;
+    background-color: #fae5ff;
+    padding: 10px;
   }
   .contact-checkbox input:checked ~ ul li {
     margin-bottom: 10px;
@@ -1928,6 +1989,20 @@ figure {
   .contact-menu {
     padding-top: 10px;
     padding-left: 10px;
+  }
+  .contact-header-flex h1 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .contact-info h2 {
+    font-size: 1rem;
+  }
+  .contact-info p {
+    font-size: 0.7rem;
+  }
+  .contact-submit-flex form input {
+    width: 90vw;
   }
 }
 @media (min-width: 701px) and (max-width: 900px) {
@@ -2006,23 +2081,21 @@ figure {
             align-items: center;
     margin: 0;
     padding: 0;
-    padding-left: 5em;
+    padding-left: 0.5em;
   }
   .info .contact-form input[type=text] {
     margin-right: 6em;
-    width: 80%;
   }
   .info .contact-form input[type=email] {
     margin-right: 6em;
     padding-top: 2em;
-    width: 80%;
   }
   .info .contact-icons {
     width: 100%;
     padding-top: 3em;
   }
   .info .contact-icons a {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .contact-info {
     padding-bottom: 3em;

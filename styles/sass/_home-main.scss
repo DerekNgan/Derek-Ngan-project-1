@@ -155,6 +155,10 @@
         display: flex;
     }
 
+    .locations-flex-container article{
+        padding: 0px 25px 0px 50px;
+    }
+
         h3.locations{
             color:$font-button-color;
             font-family:$heading-font;
@@ -200,6 +204,10 @@
     background-color: $main-color;
     padding-bottom: 100px;
     padding-top: 40px;
+
+    .blog-flex-container article{
+        padding: 0px 25px 0px 50px;
+    }
 
     .blog-flex-container{
         display: flex;
